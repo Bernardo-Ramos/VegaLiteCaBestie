@@ -299,13 +299,20 @@ The hole code to run your first VEGA-LITE program would look like this
 ---
 **used in this tutorial**
 [1] (Usado na definição de vega-lite) https://vega.github.io/vega-lite/
+
 [2] (Usado em "Key words": High-level) https://byjus.com/gate/difference-between-high-level-and-low-level-languages/#:~:text=High%2Dlevel%20languages%20require%20the,instructions%20of%20the%20machine%20language.&text=These%20languages%20have%20a%20very%20low%20memory%20efficiency.
+
 [3] (Usado em "Key words": Declarative) https://www.geeksforgeeks.org/functional-programming-paradigm/
+
 [4] (Usado em "Key words": JSON) https://www.w3schools.com/js/js_json_intro.asp
+
 [5] (Usado em "Key words": JSON e na seção 1.4) https://www.json.org/json-en.html
 
 **extra references:**
 [6] (Entrevista com o criador) https://www.youtube.com/watch?v=bCTtibplEg8&ab_channel=Weights%26Biases
+
 [7] (Aquele primeiro tutorial que encontrei) https://www.youtube.com/watch?v=zJPa8tNKGR4&ab_channel=ResearchBazaarArizona
+
 [8] (github do VEGA-LITE) https://github.com/vega/vega
+
 [9] (Exemplo de gráficos VEGA-LITE no Observable - site alternativo para fazer os plots - acho que aqui eles usam aquele VEGA-LITE API que é mais difícil) https://observablehq.com/@cmudig/a2-example-movies-data
