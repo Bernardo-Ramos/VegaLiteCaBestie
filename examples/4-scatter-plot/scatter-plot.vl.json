@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 400,
+    "width": 400,
+    "title": "This is my plot :)",
+    "description": "A simple bar chart with embedded data.",
+    "data": { 
+        "url": "data/drinks.json"
+    },
+    "mark": {
+        "type": "circle",
+        "tooltip": {"content": "data"}
+    },
+    "encoding": {
+        "x": {
+          "field": "Calories",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Sugars (g)",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Caffeine (mg)",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "Total Carbohydrates (g)",
+          "type": "quantitative"
+        }
+      }
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 400,
+    "width": 400,
+    "title": "This is my plot :)",
+    "description": "A simple bar chart with embedded data.",
+    "data": { 
+        "url": "data/drinks.json"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+          "field": "Calories",
+          "type": "quantitative",
+          "aggregate": "average"
+        },
+        "y": {
+          "field": "Beverage_category",
+          "type": "nominal"
+        }
+      }
+}

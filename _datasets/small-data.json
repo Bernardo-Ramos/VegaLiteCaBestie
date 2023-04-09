@@ -1,0 +1,8 @@
+[
+    { "weather": "sunny", "temp": 35 },
+    { "weather": "sunny", "temp": 38 },
+    { "weather": "sunny", "temp": 41 },
+    { "weather": "partially sunny", "temp": 29 },
+    { "weather": "partially sunny", "temp": 34 },
+    { "weather": "rainy", "temp": 30 }
+]

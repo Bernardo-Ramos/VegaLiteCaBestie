@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 - Introduction</title>
+
+    <!-- IMPORTING THE LIBRARIES VIA CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <!-- ------------------------------- -->
+
+</head>
+
+<body>
+
+
+    <h1>Getting started with VEGA-LITE</h1>
+    <h2>Steps to start using Vega-Lite on your own web page</h2>
+
+    <br>
+    <br>
+
+    <div id="i-wanna-place-the-plot-here"></div>
+    
+
+
+    <script>
+        /* -------------- BUILDING THE VEGA-LITE VIEW SPECS -------------- */
+        let vegaLiteViewSpecifications = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "url": "data/movies.json"
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "point",
+                        "filled": true
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "Rotten Tomatoes Rating",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "IMDB Rating",
+                            "type": "quantitative"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "line",
+                        "color": "firebrick"
+                    },
+                    "transform": [
+                        {
+                            "regression": "IMDB Rating",
+                            "on": "Rotten Tomatoes Rating"
+                        }
+                    ],
+                    "encoding": {
+                        "x": {
+                            "field": "Rotten Tomatoes Rating",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "IMDB Rating",
+                            "type": "quantitative"
+                        }
+                    }
+                },
+                {
+                    "transform": [
+                        {
+                            "regression": "IMDB Rating",
+                            "on": "Rotten Tomatoes Rating",
+                            "params": true
+                        },
+                        { "calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2" }
+                    ],
+                    "mark": {
+                        "type": "text",
+                        "color": "firebrick",
+                        "x": "width",
+                        "align": "right",
+                        "y": -5
+                    },
+                    "encoding": {
+                        "text": { "type": "nominal", "field": "R2" }
+                    }
+                }
+            ]
+        };
+        /* --------------------------------------------------------------- */
+
+
+
+        /* -------------- RUNNING THE VEGA-LITE VIEW SPECS -------------- */
+        vegaEmbed('#i-wanna-place-the-plot-here', vegaLiteViewSpecifications);
+        /* --------------------------------------------------------------- */
+    </script>
+
+</body>
+
+</html>

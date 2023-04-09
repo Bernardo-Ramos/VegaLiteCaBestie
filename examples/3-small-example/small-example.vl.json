@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 400,
+    "width": 400,
+    "title": "This is my plot :)",
+    "description": "A simple bar chart with embedded data.",
+    "data": { 
+        "url": "data/small-data.json"
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "temp",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "weather",
+        "type": "nominal"
+      }
+    }
+}
