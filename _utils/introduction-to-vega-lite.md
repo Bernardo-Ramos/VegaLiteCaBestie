@@ -97,7 +97,7 @@ console.log(fruits[0]); // Output: 'apple'
 
 2. Object is an unordered collection of `key-value` pairs. An object begins with `{` (*left brace*) and ends with `}` (*right brace*). Each `key` is followed by `:` (*colon*) and the `key-value` pairs are separated by `,` (*comma*).
 
-![[Pasted image 20230409185721.png]]
+<img src="img/Pasted image 20230409185721.png">
 
 For example:
 
@@ -135,16 +135,14 @@ console.log(person["address"]["city"]); // Output: "Anytown"
 This is the basic structure of your `html` file.
 
 
-![[desktop-2.png]]
-
+<img src="img/desktop-2.png">
 
 ### 2.2 VEGA-LITE specification structure
 ---
 Almost every VEGA-LITE specification is going to follow this basic structure:
 
 
-![[desktop-1.png]]
-
+<img src="img/desktop-1.png">
 
 
 
@@ -157,8 +155,7 @@ The easiest way to start using VEGA-LITE is by following these 3 steps:
 - ▶️ Running the program with `vegaEmbed('#html_id', variable_name)`
 
 
-![[desktop-3.png]]
-
+<img src="img/desktop-3.png">
 
 
 
