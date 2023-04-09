@@ -81,7 +81,7 @@
 ---
 1. An _array_ is an ordered collection of values. An array begins with `[` *(left bracket)* and ends with `]` *(right bracket)*. Values are separated by `,` (*comma*).
 
-![[Pasted image 20230409185351.png]]
+<img src="img/Pasted image 20230409185351.png">
 
 For example:
 
