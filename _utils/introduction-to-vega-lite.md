@@ -118,7 +118,7 @@ In this example, `person` is an object that contains three properties: `name`, `
 ```js
 // Using the dot notation
 console.log(person.name); // Output: "John"
-console.log(perons.address.city); // Output: "Anytown"
+console.log(person.address.city); // Output: "Anytown"
 
 // Using the bracket notation
 console.log(person["name"]); // Output: "John"
